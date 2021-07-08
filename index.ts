@@ -43,7 +43,7 @@ addProduct(product:Product){
 }
 getProduct(id: number): Product {
  const cosas = this.getCosas();
- return cosas.find((c) => {c.id == id})
+ return cosas.find((c) => c.id == id)
 }
 removeProduct(id: number){
   remove(this.cosas, (c) => c.id == id);
